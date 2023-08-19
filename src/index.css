@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Orbitron&display=swap');
+
+:root {
+--bg1: #145559;
+--bg2: #497174;
+--txt1: #F536F5;
+--txt2: #F5D24E;
+--gap1: 1rem 6rem;
+--gap2: 0.8rem 4rem;
+--gap3: 0.6rem 2.5rem;
+--gap4: 0.4rem 1rem;
+}
+
+.nice-text{
+    color: transparent; 
+    background-image: url('/src/assets/home-bg7.jpg');
+    -webkit-background-clip: text;
+  }

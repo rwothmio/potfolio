@@ -1,0 +1,96 @@
+form {
+    background: inherit;
+    border: solid 1px var(--bg2);
+    height: 420px;
+    aspect-ratio: 5 / 6;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 4px 4px 4px 72px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.form label {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1.15px;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.form label input,
+form textarea {
+    font-size: 14px;
+    font-family: inherit;
+    letter-spacing: 1.1px;
+    color: white;
+    background: var(--bg2);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    border-radius: 4px;
+
+}
+
+.form label input {
+    height: 32px;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+    padding: 0.4rem 1rem;
+}
+
+form ::placeholder {
+    color: rgb(255, 255, 255, 0.4);
+    font-family: 'Prompt', sans-serif;
+}
+
+
+.form label input:focus,
+form textarea:focus {
+    outline: none;
+    border-bottom: solid 1px var(--txt1);
+}
+
+.form__textarea-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.form__textarea-label span {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 11px;
+    font-weight: 100;
+    font-style: italic;
+    margin-right: 8px;
+}
+
+form button {
+    color: white;
+    background: var(--txt1);
+    font-size: 16px;
+    font-family: inherit;
+    letter-spacing: 1.2px;
+    height: 32px;
+    padding: 0 16px;
+    border-radius: 4px 4px 4px 24px;
+}
+
+@media screen and (max-width: 550px) {
+    .form {
+        height: 380px;
+        margin-top: 0.6rem;
+        margin-left: unset;
+    }
+
+    .form label {
+        margin-bottom: 0.6rem;
+    }
+
+    .form label input {
+        height: 30px;
+    }
+}

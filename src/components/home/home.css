@@ -1,0 +1,42 @@
+#home {
+    margin-top: 2rem;
+}
+
+#i-am {
+    color: white;
+    opacity: 0.8;
+}
+
+#i-use {
+    font-size: 80px;
+    line-height: 92px;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 770px) {
+    #i-am {
+        font-size: 24px;
+    }
+
+    #i-use {
+        font-size: 64px;
+        line-height: 68px;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+#home {
+    margin-top: 1rem;
+}
+
+    #i-am {
+        font-size: 20px;
+    }
+
+    #i-use {
+        font-size: 38px;
+        line-height: 48px;
+        margin-top: 1rem;
+    }
+}

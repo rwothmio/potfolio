@@ -1,0 +1,53 @@
+#projects {
+    margin-top: 2rem;
+    color: white;
+}
+
+#projects h2 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+#projects p {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+#projects p a {
+    color: var(--txt2);
+}
+
+.top-fruit-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#projects .fruit-icons * {
+    color: var(--txt1);
+    font-size: 24px;
+}
+
+@media screen and (max-width: 550px) {
+    #projects {
+        margin-top: 0.6rem;
+    }
+
+    #projects h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #projects p {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 0.8px;
+        line-height: 22px;
+        margin-bottom: 0.5rem;
+    }
+
+    .top-fruit-icons {
+        display: none;
+    }
+}

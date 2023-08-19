@@ -1,0 +1,57 @@
+.sections {
+  display: flex;
+  justify-content: center;
+  padding: var(--gap1);
+  overflow: hidden;
+}
+
+.sections * {
+  max-width: 1150px;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  background: var(--bg1);
+  overscroll-behavior-y: contain;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a, li, button {
+    cursor: pointer;
+}
+
+button, input, textarea {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+@media screen and (max-width: 1024px) {
+  .sections {
+    padding: var(--gap2);
+  }
+}
+@media screen and (max-width: 770px) {
+  .sections {
+    padding: var(--gap3);
+  }
+}
+@media screen and (max-width: 550px) {
+  .sections {
+    padding: var(--gap4);
+  }
+}

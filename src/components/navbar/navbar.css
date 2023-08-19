@@ -1,0 +1,70 @@
+header {
+    background: var(--bg1);
+    display: flex;
+    justify-content: space-between;
+    padding: var(--gap1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+#home-logo, #contact-logo {
+    color: var(--txt1);
+    font-size: 32px;
+    align-self: flex-end;
+}
+
+#home-logo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+header nav h2 {
+    text-align: center;
+    color: white;
+    letter-spacing: 1.4px;
+    font-weight: 400;
+}
+
+.nav-link {
+    color: var(--bg2);
+}
+
+.current-section {
+    color: var(--txt1);
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: var(--gap2);
+    }
+}
+@media screen and (max-width: 770px) {
+    header {
+        padding: var(--gap3);
+    }
+    #home-logo, #contact-logo {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 550px) {
+    header {
+        padding: var(--gap4);
+    }
+    #home-logo, #contact-logo {
+        font-size: 24px;
+    }
+}

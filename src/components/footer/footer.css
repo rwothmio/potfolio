@@ -1,0 +1,14 @@
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: solid 1px var(--bg2);
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    z-index: 2;
+}
+
+footer p {
+    color: var(--bg2);
+}
