@@ -2,6 +2,12 @@ import React from "react";
 import "./contact.css";
 import copy from "copy-to-clipboard";
 import ContactForm from "../contact form/ContactForm";
+import { motion } from "framer-motion";
+
+const slideTransition = {
+  hidden: { x: "-100%" },
+  visible: { x: 0 },
+};
 
 const copyToClipboard = () => {
   copy("brwothmio@gmail.com");
@@ -10,7 +16,13 @@ const copyToClipboard = () => {
 
 function Contact() {
   return (
-    <section id="contact">
+    <motion.section
+      id="contact"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      variants={slideTransition}
+      transition={{ duration: 0.5 }}
+    >
       <div className="contact__content nice-text">
         <p id="contact__content-p1">
           If you'd like to reach out to me, <br />
@@ -36,11 +48,11 @@ function Contact() {
         <button onClick={copyToClipboard}>this email address</button> or form
         below to reach out to me
       </p>
-      
+
       <div className="contact__form">
         <ContactForm />
       </div>
-    </section>
+    </motion.section>
   );
 }
 

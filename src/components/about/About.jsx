@@ -2,10 +2,22 @@ import React from "react";
 import "./about.css";
 import Technology from "../technology/Technology";
 import images from "./images";
+import { motion } from "framer-motion";
+
+const slideTransition = {
+  hidden: { x: '-100%' },
+  visible: { x: 0 }
+};
 
 function About() {
   return (
-    <section id="about">
+    <motion.section
+      id="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      variants={slideTransition}
+      transition={{ duration: 0.5 }}
+    >
       <div className="about__content nice-text">
         <p className="nice-text">
           I'm an enthusiastic and dedicated web developer from Uganda, with a
@@ -34,7 +46,7 @@ function About() {
           ))}
         </div>
       </div> */}
-    </section>
+    </motion.section>
   );
 }
 

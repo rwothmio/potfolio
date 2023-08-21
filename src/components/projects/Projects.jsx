@@ -3,6 +3,12 @@ import "./projects.css";
 import { GiPineapple as PineappleIcon } from "react-icons/gi";
 import { CiApple as AppleIcon1 } from "react-icons/ci";
 import { FaAppleAlt as AppleIcon2 } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+const slideTransition = {
+  hidden: { x: "-100%" },
+  visible: { x: 0 },
+};
 
 const FruitIcons = () => (
   <div className="fruit-icons">
@@ -14,7 +20,13 @@ const FruitIcons = () => (
 
 function Projects() {
   return (
-    <section id="projects">
+    <motion.section
+      id="projects"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      variants={slideTransition}
+      transition={{ duration: 0.5 }}
+    >
       <h2>
         <a href="https://freshfruits-rwothmio.vercel.app" target="_blank">
           The Fresh Fruits E-Commerce Store
@@ -41,7 +53,7 @@ function Projects() {
         I wrote on the site.
       </p>
       <FruitIcons />
-    </section>
+    </motion.section>
   );
 }
 
